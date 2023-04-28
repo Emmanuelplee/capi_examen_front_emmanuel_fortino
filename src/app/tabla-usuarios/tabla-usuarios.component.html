@@ -1,0 +1,28 @@
+<div>
+  <table>
+    <thead>
+      <tr style="width: 100%;">
+        <th>Nombre de usuario</th>
+        <th style="width: 30%;">Correo electrónico</th>
+        <th>Edad</th>
+        <th>Domicilio</th>
+        <th>Num exterior</th>
+        <th>Colonia</th>
+        <th>CP</th>
+        <th>Ciudad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of listaUsuarios" style="text-align: center;">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.edad }}</td>
+        <td>{{ usuario.domicilio }}</td>
+        <td>{{ usuario.numero_exterior }}</td>
+        <td>{{ usuario.colonia }}</td>
+        <td>{{ usuario.cp }}</td>
+        <td>{{ usuario.ciudad }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

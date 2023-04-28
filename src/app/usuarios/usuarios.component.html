@@ -1,0 +1,31 @@
+<div>
+  <h2 style="text-align: center;">Lista de usuarios!</h2>
+
+  <!-- <h2 *ngIf="booleano">
+    La variable boolean es true
+  </h2>
+  <h2 *ngIf="!booleano">
+    La variable boolean es false
+  </h2>
+
+  <ul>
+    <li *ngFor="let elemento of listado">
+      {{ elemento.text }}
+      <span *ngIf="elemento.disable">
+        Deshabilitado
+      </span>
+      <span *ngIf="elemento.disable">
+        Habilitado
+      </span>
+    </li>
+  </ul>
+  <div [ngClass]="isEspecial ? 'especial' :''">Esto es especial</div> -->
+
+  <!-- <div *ngFor="let user of usuarios">
+    {{ user }}
+  </div> -->
+  <div>
+    <app-tabla-usuarios [listaUsuarios]="usuarios"></app-tabla-usuarios>
+  </div>
+
+</div>
